@@ -1,0 +1,15 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+<div class="note-detail">
+    <h2>Note Detail</h2>
+
+    <h2 class="note-title">{{ note.title }}</h2>
+
+    <h3 class="note-description">{{ note.description }}</h3>
+</div>
+
+<a href="{% url 'NoteUpdate' note.id %}" class="note-update-link">Update</a>
+
+
+{% endblock content %}
